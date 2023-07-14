@@ -37,46 +37,65 @@ namespace _14july2023
             //Console.ReadKey();
 
             //Jagged Array Exercise-01
-            Console.Write("Enter the number of employees: ");
-            int numEmployees = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter the number of employees: ");
+            //int numEmployees = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("Enter the number of working days for each employee: ");
-            int numDays = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("Enter the number of working days for each employee: ");
+            //int numDays = Convert.ToInt32(Console.ReadLine());
 
-            // Create a jagged array to store salaries
-            int[][] salaries = new int[numEmployees][];
+            //// Create a jagged array to store salaries
+            //int[][] salaries = new int[numEmployees][];
 
             // Input salaries for each employee
-            for (int i = 0; i < numEmployees; i++)
-            {
-                salaries[i] = new int[numDays];
+            //for (int i = 0; i < numEmployees; i++)
+            //{
+            //    salaries[i] = new int[numDays];
 
-                for (int j = 0; j < numDays; j++)
-                {
-                    Console.Write($"Enter salary for Employee {i + 1}, Day {j + 1}: ");
-                    salaries[i][j] = Convert.ToInt32(Console.ReadLine());
-                }
-            }
+            //    for (int j = 0; j < numDays; j++)
+            //    {
+            //        Console.Write($"Enter salary for Employee {i + 1}, Day {j + 1}: ");
+            //        salaries[i][j] = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //}
 
             // Display the salary for each day and calculate the total salary for each employee
-            Console.WriteLine("\nDay1\tDay2\tDay3\tDay4\tDay5\tTotalSalary");
+            //Console.WriteLine("\nDay1\tDay2\tDay3\tDay4\tDay5\tTotalSalary");
 
-            for (int i = 0; i < numEmployees; i++)
+            //for (int i = 0; i < numEmployees; i++)
+            //{
+            //    int totalSalary = 0;
+
+            //    for (int j = 0; j < numDays; j++)
+            //    {
+            //        Console.Write($"{salaries[i][j]}\t");
+            //        totalSalary += salaries[i][j];
+            //    }
+
+            //    Console.WriteLine(totalSalary);
+            //}
+
+            //Console.ReadKey();
+
+            int r, c;
+            int[][,] myJArray = new int[3][,];
+            myJArray[0] = new int[2, 2] { { 1, 2 }, { 2, 3 } };
+            myJArray[1] = new int[3, 2] { { 1, 2 }, { 2, 3 },{5,4 } };
+            myJArray[2] = new int[3, 3] { { 1, 2,6 }, { 2, 3,7 },{5,4,8 } };
+            Console.WriteLine("Stored Values are");
+            for(int i=0; i<myJArray.Length;i++)
             {
-                int totalSalary = 0;
-
-                for (int j = 0; j < numDays; j++)
+                for (r = 0; r < myJArray[i].GetLength(0); r++)
                 {
-                    Console.Write($"{salaries[i][j]}\t");
-                    totalSalary += salaries[i][j];
+                    for (c = 0; c < myJArray[i].GetLength(0); c++)
+                    {
+                        Console.Write(myJArray[i][r, c] + "\t");
+                    }
+                    Console.WriteLine("\n");
                 }
+                Console.WriteLine("***********************");
 
-                Console.WriteLine(totalSalary);
             }
-
             Console.ReadKey();
-
-
         }
     }
 }
