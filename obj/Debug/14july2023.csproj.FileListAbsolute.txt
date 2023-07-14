@@ -1,0 +1,8 @@
+D:\14july2023\14july2023\bin\Debug\14july2023.exe.config
+D:\14july2023\14july2023\bin\Debug\14july2023.exe
+D:\14july2023\14july2023\bin\Debug\14july2023.pdb
+D:\14july2023\14july2023\obj\Debug\14july2023.csproj.AssemblyReference.cache
+D:\14july2023\14july2023\obj\Debug\14july2023.csproj.SuggestedBindingRedirects.cache
+D:\14july2023\14july2023\obj\Debug\14july2023.csproj.CoreCompileInputs.cache
+D:\14july2023\14july2023\obj\Debug\14july2023.exe
+D:\14july2023\14july2023\obj\Debug\14july2023.pdb
